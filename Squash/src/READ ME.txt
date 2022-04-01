@@ -1,0 +1,44 @@
+Class PAR
+{
+takes player names
+bool game done
+string winner
+bool overtime and game_done
+}
+
+Update_score
+{
+checks if we should enter overtime by checking if scores enter 10
+then checks to see who won the round and increments the score for that player
+if we are in overtime, checks to see if diffrence is equal to two, in that case player wins.
+If we aren't in overtime checks to see if he got the 11 points or not.
+}
+
+
+Class HIHO
+{
+takes player names
+bool game done
+string winner
+string last winner
+bool and game_done
+}
+Update_score
+{
+checks to see who won the round, then checks if he won the round before that aswell. If he won, he gets a point, if he didn't win the last round,
+he gets the serve. (first round is always played for whoever gets serve)
+}
+
+
+
+Main
+{
+takes player names and game mode
+creates object PAR and HIHO.
+creates while loop that keeps going until both games end
+passes whoever wins round to update_score in PAR and HIHO aslong as games are still running, while storing who wins round in an array
+increments total game points based on who won the games
+starts printing table containg who won which rounds
+then checks scores to see who won PAR and HIHo games and prints the winner alongside the score.
+}
+}
